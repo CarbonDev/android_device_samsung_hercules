@@ -40,9 +40,8 @@ TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules
 TARGET_KERNEL_CONFIG        := cyanogenmod_hercules_defconfig
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 
-# Build rom with 4.6 and -O2
-TARGET_GCC_VERSION := 4.6
-TARGET_USE_O2 := true
+# Assert minimum baseband version
+TARGET_BOARD_INFO_FILE ?= device/samsung/hercules/board-info.txt
 
 # cat /proc/emmc
 #dev:        size     erasesize name
