@@ -4,9 +4,6 @@ $(call inherit-product, device/samsung/hercules/full_hercules.mk)
 OVERLAY_TARGET := pa_hdpi
 
 # Inherit some common Carbon stuff.
-$(call inherit-product, vendor/carbon/config/common_gsm.mk)
-
-# Inherit some common Carbon stuff.
 $(call inherit-product, vendor/carbon/config/common_phone.mk)
 
 # languages
